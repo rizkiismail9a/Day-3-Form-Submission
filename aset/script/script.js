@@ -7,24 +7,20 @@ function getData() {
 
   if (nama == "") {
     alert("Isi namanya, Boi.");
-  }
-  if (email == "") {
+  } else if (email == "") {
     alert("Isi alamat emailnya, Boi.");
-  }
-  if (nomor == "") {
+  } else if (nomor == "") {
     alert("Isi nomor hp-nya, Boi.");
-  }
-  if (topik == "") {
+  } else if (topik == "") {
     alert("Mau ngomongin apa?");
-  }
-  if (pesan == "") {
+  } else if (pesan == "") {
     alert("Mau ngomong apa?");
+  } else {
+    let penerima = "muhamadrizkiismail9a@gmail.com";
+    let a = document.createElement("a");
+    a.href = `mailto:${penerima}?subject=${topik}&body=${pesan}`;
+    a.click();
   }
-
-  let penerima = "muhamadrizkiismail9a@gmail.com";
-  let a = document.createElement("a");
-  a.href = `mailto:${penerima}?subject=${topik}&body=${pesan}`;
-  a.click();
 
   console.log(nama);
   console.log(email);
