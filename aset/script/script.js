@@ -18,7 +18,7 @@ function getData() {
   } else {
     let penerima = "muhamadrizkiismail9a@gmail.com";
     let a = document.createElement("a");
-    a.href = `mailto:${penerima}?subject=${topik}&body=${pesan}`;
+    a.href = `mailto:${penerima}?subject=${topik}&body=Halo, nama saya ${nama}. ${pesan}. Jika Anda ingin melanjutkan percakapan, tolong hubungi saya di nomor ${nomor} atau ${email}. Terima kasih`;
     a.click();
   }
 
